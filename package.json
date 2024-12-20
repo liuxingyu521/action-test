@@ -8,12 +8,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mv index.js dist/index.js"
+    "build": "pnpm clean-dist && cp index.js dist/index.js",
+    "clean-dist": "rimraf dist && mkdir dist"
   },
   "keywords": [],
   "author": "liuxingyu521",
   "license": "ISC",
   "dependencies": {
-    "cowsay": "^1.6.0"
+    "cowsay": "^1.6.0",
+    "rimraf": "^6.0.1"
   }
 }
