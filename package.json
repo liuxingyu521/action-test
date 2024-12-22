@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pnpm clean-dist && cp index.js dist/index.js",
-    "clean-dist": "rimraf dist && mkdir dist"
+    "clean-dist": "rimraf dist && mkdir dist",
+    "release": "npx bumpp"
   },
   "keywords": [],
   "author": "liuxingyu521",
